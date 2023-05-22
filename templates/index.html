@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/cropperjs/dist/cropper.min.css">
+    <!-- <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">  -->
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="row1">
+                <div class="column3">
+                    <div class="upload"> 
+                        <p class="title">Upload the first image</p>
+                        <form method = "post" id="upload_form1" enctype="multipart/form-data">
+                            <input type="file" name="file" onchange=" uploadImage(1); " />
+                        </form>
+                    </div>
+                    <div class="upload">
+                        <p class="title">Upload the second image</p>
+                        <form method = "post" id="upload_form2" enctype="multipart/form-data">
+                            <input type="file" name="file" onchange=" uploadImage(2); " />
+                        </form>
+                    </div>
+                    <div class="radio">
+                        <br><input id="radio1" name="choise1" type="radio" value="Magnitude" checked onclick="change(this);" />
+                        <label for="radio1">Magnitude1 Phase2</label></br>
+                        <br><input id="radio2" name="choise1" type="radio" value="Phase" onclick="change(this);" />
+                        <label for="radio2">Phase1 Magnitude2</label></br>
+                    </div>
+                </div>
+                <div class="column4">
+                    <div class="input_img">
+                        <img src="static/images/img1.png" name="default1" id="img1" name="pic1">
+                    </div>
+                </div>
+                <div class="column5">
+                    <div class="magphase_img">
+                        <img  id="Photo_1" name="img1">
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="column3">
+                    <div class="btn-container">
+                       
+                        <div class="radio">
+                            <br><input type="checkbox" id="check" onclick="cutCrop();" />
+                            <label for="check">Inverse</label></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="column4">
+                    <div class="input_img">
+                        <img src="static/images/img2.png" name="default2" id="img2" name="pic2" >
+                    </div>
+                </div>
+                <div class="column5">
+                    <div class="magphase_img">
+                        <img id="Photo_2" name="img2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column2">
+            <p class="head">Output Image</p>
+            <div class="output_img">
+                <img name = 'output' id="out" style="display: none;"  class="img_out">
+            </div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+    <script src="../static/cropperjs/dist/cropper.min.js"></script>
+</body>
+</html>

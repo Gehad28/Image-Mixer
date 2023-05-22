@@ -1,0 +1,138 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color:rgba(239, 239, 239, 0.842);
+}
+
+label{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+.column1{
+    flex: 70%;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.column2{
+    flex: 30%;
+    text-align: center
+}
+
+.row1{
+    height: 50%;
+    display: flex;
+}
+
+.row2{
+    height: 50%;
+    display: flex;
+}
+
+.column3{
+    flex: 20%;
+    text-align: center;
+}
+
+.column4{
+    flex: 40%;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.column5{
+    flex: 40%;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.upload{
+    text-align: left;
+    padding-top: 2rem;
+}
+
+p {
+    font-weight: 545;
+}
+
+.radio{
+    text-align: left;
+    padding-top: 3rem;
+}
+
+.btn-container{
+    text-align: left;
+    /* padding-top: 1rem; */
+}
+
+.button {
+    top:50%;
+    background: #084cdf;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding: 10px 20px;
+    min-height:20px; 
+    min-width: 120px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.button:hover{
+    background: #0d45a5;
+}
+
+.btn2{
+    padding-top: 1rem;
+}
+
+.magphase_img{
+    width: 490px;
+    height: 369px;
+}
+
+.magphase_img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.input_img img{
+    width: 93.5%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.img_out{
+    width: 60%;
+    height: auto;
+}
+
+.head{
+    padding-top: 6rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
